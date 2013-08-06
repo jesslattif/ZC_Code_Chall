@@ -3,7 +3,7 @@
 
 import hashlib as h
 
-message = h.md5("All I really want to do is eat some pie".encode("utf8"))
+message = h.md5("All I really want to do is eat some pie")
 
 print message.digest()
 
