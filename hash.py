@@ -5,11 +5,5 @@ import hashlib as h
 
 message = h.md5("All I really want to do is eat some pie")
 
-print message.digest()
-
-print message.digest()
-# .decode("utf8")? No, that doesn't work - 'utf8' codec can't decode byte 0xbf in position 2: invalid start byte
-
-
 print message.hexdigest()
 
