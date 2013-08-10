@@ -51,10 +51,6 @@ def main():
 	input_prime_file = open("primes1.txt") #create variable from text file in args
 	primes_string = input_prime_file.read() # creates variable primes from text file
 	input_prime_file.close() #closes text file
-
-	#x = [expression for variable in list conditional]
-	#x = [x*x for x in xs if x % 2 == 0]
-
 	primes_and_junk = [space.strip() for space in primes_string.split(' ')]#strips spaces & newlines out of file
 	primes_list = [int(num) for num in primes_and_junk if num != ""]
 	# check_data(primes_list)
