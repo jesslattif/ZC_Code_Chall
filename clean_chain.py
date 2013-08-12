@@ -3,8 +3,6 @@
 ###
 ###This function checks the incoming data to make sure that no number is smooshed together with the next number (no commas are eliminated); each number should be less than the one following it.
 ###
-#eg list
-# nums = [1, 4, 7, 910, 11]
 
 def check_data(nums):
 	for i in range(len(nums) -1):
@@ -13,7 +11,7 @@ def check_data(nums):
 		else:
 			print i, nums[i]
 ###
-###
+### this is the main function
 ###
 
 def clean_chain(primes, end):
