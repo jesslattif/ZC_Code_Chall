@@ -23,13 +23,12 @@ def clean_chain(primes, end):
 	for i, prime in enumerate(primes):
 		chain.append(prime) #appends prime to chain list
 		if len(chain) <= 2:
-			current_sum = chain[0]
+			current_sum = chain[0] #if length of chain is less than 2, sum is 1st number in list
 			previous_sum = current_sum
 		else:
-			current_sum = previous_sum + chain[-2]
+			current_sum = previous_sum + chain[-2] # add number in 2nd to last position to previous sum 
 			previous_sum = current_sum
-			# sum(chain[0:(len(chain)-1)]) #holds sum (x + ...(n-1))
-		if current_sum % chain[-1] == 0: #if sum divided by last element has a remainder of 0
+		if current_sum % chain[-1] == 0: 
 			found += 1 #increment found by 1
 			length = len(chain) 
 			divisor = chain[-1]
