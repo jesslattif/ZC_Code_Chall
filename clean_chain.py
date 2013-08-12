@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 ### 
 ###
-###This function checks the incoming data to make sure that no number is smooshed together with the next number (no commas are eliminated); each number should be less than the one following it.
+###This function checks the incoming data to make sure that no number is smooshed together 
+## with the next number (no commas are eliminated); each number should be less than the one following it.
 ###
 
 def check_data(nums):
